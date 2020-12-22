@@ -10,7 +10,7 @@ function checkPopular() {
     person.popularity = "Not known";
     person.moneypersec = 2;
   } else if (person.howpopular <= 10) {
-    person.popularity = "Ony a few people know you";
+    person.popularity = "Only a few people know you";
     person.moneypersec = 2 + person.howpopular;
   } else if (person.howpopular <= 100) {
     person.popularity = "Popular";
