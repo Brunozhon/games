@@ -24,6 +24,7 @@ function enterVault() {
       output("'*groans* Not in the vault! *groans* In the...'")
     } else if (i = 10) {
       output("You got in to the vault while the scientist said, '...door. What? *groans* Where are they? *groans* Why didn't they go in the door! *groans*' The scientist groaned and groaned and got out of control.")
+      clearInterval(intv)
     }
   }, 1000)
 }
