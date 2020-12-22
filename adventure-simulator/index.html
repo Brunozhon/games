@@ -7,9 +7,9 @@ title: Adventure simulator!
   <pre>
 ------------------------------------------------
 |----||----||----||----||----||----||----||----|
-|    ||    ||    ||    ||    |<span onclick="alert('Found some burritos!'); person.calories += 100">|----------|</span>|    |
-|    ||    ||    ||    ||    |<span onclick="alert('Found some burritos!'); person.calories += 100">| Buritos  |</span>|    |
-|    ||    ||    ||    ||    |<span onclick="alert('Found some burritos!'); person.calories += 100">|          |</span>|    |
+|    ||    ||    ||    ||    |<span onclick="alert('Found some burritos!'); person.calories += 100; output('You found some food!')">|----------|</span>|    |
+|    ||    ||    ||    ||    |<span onclick="alert('Found some burritos!'); person.calories += 100; output('You found some food!')">| Buritos  |</span>|    |
+|    ||    ||    ||    ||    |<span onclick="alert('Found some burritos!'); person.calories += 100; output('You found some food!')">|          |</span>|    |
 |    ||    ||   <span onclick="if (!person.guidetobeingpop) {person.howpopular = 10; checkPopular(); person.guidetobeingpop = true}">|------------------------|</span>|    |
 |    ||    ||   <span onclick="if (!person.guidetobeingpop) {person.howpopular = 10; checkPopular(); person.guidetobeingpop = true}">| Guide to being popular |</span>|    |
 |    ||    ||   <span onclick="if (!person.guidetobeingpop) {person.howpopular = 10; checkPopular(); person.guidetobeingpop = true}">| in a snap and a tap    |</span>|    |
@@ -20,7 +20,7 @@ title: Adventure simulator!
 </div>
 <div class="container-fluid">
   <h2>The console</h2>
-  <pre>
+  <pre id="console">
 Copyright 2020 Bruno Zhong<br>All rights reserved.
   </pre>
 </div>
@@ -28,6 +28,15 @@ Copyright 2020 Bruno Zhong<br>All rights reserved.
 <p>Calories: <span id="cals"></span> Money: <span id="money"></span> How popular: <span id="poptxt"></span> (<span id="popnum"></span> people)</p>
 <script src="person.js"></script>
 <script>
+  // Functions
+  
+  function output(text) {
+    var elem = document.getElementById("console");
+    elem.innerHTML = text + "<br>";
+  }
+  
+  // Code
+  
   var cal = document.getElementById("cals");
   var money = document.getElementById("money");
   var poptxt = document.getElementById("poptxt")
