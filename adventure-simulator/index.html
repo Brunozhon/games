@@ -19,4 +19,17 @@ title: Adventure simulator!
   </pre>
 </div>
 <a href="person.js">Your person</a>
+<p>Calories: <span id="cals"></span> Money: <span id="money"></span></p>
 <script src="person.js"></script>
+<script>
+  var cal = document.getElementById("cals");
+  var money = document.getElementById("money");
+  cal.innerHTML = person.calories;
+  money.innerHTML = person.money;
+  setInterval(function() {
+    person.money += person.moneypersec;
+    person.calories -= 1;
+    cal.innerHTML = person.calories;
+    money.innerHTML = person.money;
+  }, 1000);
+</script>
