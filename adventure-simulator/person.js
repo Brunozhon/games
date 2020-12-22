@@ -3,7 +3,8 @@ var person = {
   money: 100,
   popularity: "Not known",
   howpopular: 0,
-  moneypersec: 2
+  moneypersec: 2,
+  guidetobeingpop: false
 };
 function checkPopular() {
   if (person.howpopular == 0) {
