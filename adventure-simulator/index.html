@@ -30,7 +30,7 @@ title: Adventure simulator!
   money.innerHTML = person.money;
   poptxt.innerHTML = person.popularity;
   popnum.innerHTML = person.howpopular;
-  if (localStorage.getItem("person")) {
+  if (localStorage.getItem("person") != undefined) {
     person = localStorage.getItem("person")
   }
   setInterval(function() {
