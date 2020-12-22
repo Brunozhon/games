@@ -20,6 +20,18 @@ title: Adventure simulator!
 </div>
 <div class="container-fluid">
   <h2>The vault</h2>
+  <pre>
+|---------------------|
+|                     |
+|     ____________    |
+|    /            \   |
+|   /              \  |
+|  |                | |
+|   \              /  |
+|    \____________/   |
+|                     |
+|---------------------|
+  </pre>
 </div>
 <div class="container-fluid">
   <h2>The console</h2>
@@ -31,14 +43,11 @@ title: Adventure simulator!
 <script src="person.js"></script>
 <script>
   // Functions
-  
   function output(text) {
     var elem = document.getElementById("console");
     elem.innerHTML += "<br>" + text;
   }
-  
   // Code
-  
   var cal = document.getElementById("cals");
   var money = document.getElementById("money");
   var poptxt = document.getElementById("poptxt")
