@@ -19,17 +19,23 @@ title: Adventure simulator!
   </pre>
 </div>
 <a href="person.js">Your person</a>
-<p>Calories: <span id="cals"></span> Money: <span id="money"></span></p>
+<p>Calories: <span id="cals"></span> Money: <span id="money"></span> How popular: <span id="poptxt"></span> (<span id="popnum"></span> people)</p>
 <script src="person.js"></script>
 <script>
   var cal = document.getElementById("cals");
   var money = document.getElementById("money");
+  var poptxt = document.getElementById("poptxt")
+  var popnum = document.getElementById("popnum");
   cal.innerHTML = person.calories;
   money.innerHTML = person.money;
+  poptxt.innerHTML = person.popularity;
+  popnum.innerHTML = person.howpopular;
   setInterval(function() {
     person.money += person.moneypersec;
     person.calories -= 1;
     cal.innerHTML = person.calories;
     money.innerHTML = person.money;
+    poptxt.innerHTML = person.popularity;
+    popnum.innerHTML = person.howpopular;
   }, 1000);
 </script>
