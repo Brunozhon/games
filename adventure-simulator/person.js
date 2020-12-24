@@ -4,7 +4,9 @@ var person = {
   popularity: "Not known",
   howpopular: 0,
   moneypersec: 2,
-  guidetobeingpop: false
+  guidetobeingpop: false,
+  foundWorldMap: false,
+  inventory: []
 };
 function checkPopular() {
   if (person.howpopular == 0) {
