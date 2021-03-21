@@ -1,9 +1,19 @@
+function String.prototype.hexE() {
+  var hexStr = "0123456789ABCDEF";
+  var low = String % 16;
+  var high = (String - low) / 16;
+  var hex = "" + hexStr.charAt(high) + hexStr.charAt(low);
+  return hex;
+}
+function String.prototype.hexD() {
+  return parseInt(String, 16);
+}
 function save(data) {
-  localStorage.setItem("savedata", JSON.stringify(data));
+  localStorage.setItem("savedata", JSON.stringify(data).hexE());
   alert("Data saved!")
 }
 function load() {
-  var d = JSON.parse(localStorage.getItem("savedata"));
+  var d = JSON.parse(localStorage.getItem("savedata").hexD());
   alert("Data loaded from last game!");
   return d;
   /*
