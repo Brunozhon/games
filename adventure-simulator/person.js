@@ -24,11 +24,12 @@ function checkPopular() {
   }
 }
 function sandwich() {
-  buy(15, "sandwich");
+  buy(15, "sandwich", 150);
 }
-function buy(cost, prod) {
+function buy(cost, prod, cals) {
   if (person.money >= cost) {
     person.money = person.money - cost;
+    person.calories = person.calories + cals;
   } else {
     alert("You don't have enough money to buy the " + prod + ".");
   }
