@@ -8,7 +8,7 @@ function enterVault() {
     } else if (i == 2) {
       output("You say, 'I want to go in.'")
     } else if (i == 3) {
-      output("'What? I just said 'not' 1260 times and I am very tired (because I said 'not' 1260 times) and you still want to go?'")
+      output("'What? I just said 'not' 2030 times and I am very tired (because I said 'not' 2030 times) and you still want to go?'")
     } else if (i == 4) {
       output("'Fine. Just go. *groans*'")
     } else if (i == 5) {
