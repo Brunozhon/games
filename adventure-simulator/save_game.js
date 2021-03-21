@@ -10,11 +10,11 @@ function String.prototype.hexD() {
 }
 function save(data) {
   localStorage.setItem("savedata", JSON.stringify(data).hexE());
-  alert("Data saved!")
+  output("Data saved!")
 }
 function load() {
   var d = JSON.parse(localStorage.getItem("savedata").hexD());
-  alert("Data loaded from last game!");
+  output("Data loaded from last game!");
   return d;
   /*
   If I did this...
