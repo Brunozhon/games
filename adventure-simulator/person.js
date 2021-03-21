@@ -24,10 +24,7 @@ function checkPopular() {
   }
 }
 function sandwich() {
-  var buy_c = alert('Do you want to buy the sandwich (150 calories) ($150)? Press "OK" to buy it.');
-  if (buy_c == true) {
-    buy(150, "sandwich");
-  }
+  buy(150, "sandwich");
 }
 function buy(cost, prod) {
   if (person.money >= cost) {
