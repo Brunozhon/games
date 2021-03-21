@@ -24,7 +24,7 @@ function checkPopular() {
   }
 }
 function sandwich() {
-  buy(150, "sandwich");
+  buy(15, "sandwich");
 }
 function buy(cost, prod) {
   if (person.money >= cost) {
