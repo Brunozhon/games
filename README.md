@@ -20,6 +20,7 @@ It goes like this:
      |                        |
 |-----------------------------------|
 |                                   |
+|                                   |
 |-----------------------------------|
 
 A sweet, delicious BIRTHDAY cake ($10,000) (1000 cals). (WE'LL ADD THAT SOON!!!)
