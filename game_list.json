@@ -1,5 +1,10 @@
 {
-  "adventure_simulator":{
-    "url":"https://brunozhon.github.io/games/adventure-simulator/"
+  "adventure_simulator": {
+    "url": "https://brunozhon.github.io/games/adventure-simulator/",
+    "scripts_urls": [
+      "https://brunozhon.github.io/games/adventure-simulator/person.js",
+      "https://brunozhon.github.io/games/adventure-simulator/vault.js",
+      "https://brunozhon.github.io/games/adventure-simulator/save_game.js"
+    ]
   }
 }
