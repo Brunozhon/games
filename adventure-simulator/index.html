@@ -57,6 +57,37 @@ title: Adventure simulator!
 <a href="person.js">Your person</a>
 <a href="vault.js">The vault</a>
 <p>Calories: <span id="cals"></span> Money: <span id="money"></span> How popular: <span id="poptxt"></span> (<span id="popnum"></span> people)</p>
+<!-- Button trigger modal -->
+<div class="sticky-top">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Shop</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>The store</h2>
+  <pre onclick="sandwich()">
+|-----------------------------------|
+|-----------------------------------|
+  _________________________________ 
+ |_________________________________|
+(__)(__)(__)(__)(__)(__)(__)(__)(__)
+|-----------------------------------|
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="person.js"></script>
 <script>
   // Functions
