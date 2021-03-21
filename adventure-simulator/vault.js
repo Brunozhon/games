@@ -16,7 +16,7 @@ function enterVault() {
     } else if (i == 6) {
       output("'*groans* Don't blame me if you die! *groans*'")
     } else if (i == 7) {
-      output("The sciencetist let you go...")
+      output("The inventor let you go...")
     } else if (i == 8) {
       output("...in the vault.")
     } else if (i == 9) {
