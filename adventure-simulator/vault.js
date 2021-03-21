@@ -12,7 +12,7 @@ function enterVault() {
     } else if (i == 4) {
       output("'Fine. Just go. *groans*'")
     } else if (i == 5) {
-      output("The sciencetist let you...")
+      output("The inventor let you...")
     } else if (i == 6) {
       output("'*groans* Don't blame me if you die! *groans*'")
     } else if (i == 7) {
@@ -23,7 +23,20 @@ function enterVault() {
       output("'*groans* Not in the vault! *groans* In the...'")
     } else if (i == 10) {
       output("You got in to the vault while the scientist said, '...door. What? *groans* Where are they? *groans* Why didn't they go in the door! *groans*' The scientist groaned and groaned and got out of control.")
-      clearInterval(intv)
+    } else if (i == 11) {
+      output("...but you died. It should've been good to listen to the inventor. Please wait while you get sent to the homepage. 'Great,' says the inventor.")
+    } else if (i == 12) {
+      output("You look at the good pictures...")
+      output("|-----------|<br>|           |<br>|  |----|   |<br>|  |    |   |<br>|  |    |   |<br>|-----------|")
+      output("...great, soothing pictures.")
+    } else if (i == 13) {
+      output("Calories: 10000000000 Money: $1000000000000 Popularity: The most popular in the universe.")
+      output("That one was about the game but you forgot, in the next second...")
+    } else if (i == 14) {
+      output("How long did it last? 14? 15? 16? In the next second...")
+    } else if (i == 15) {
+      window.location.replace("/games/")
+      clearInterval(intv);
     }
     i += 1;
   }, 1000)
