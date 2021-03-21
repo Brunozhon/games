@@ -9,17 +9,20 @@ Adventure simulator is a game where you eat food, survive, discover things, and 
 It goes like this:
 
 ```
-1. Eat food
+1. Eat food from the shop
+              HAPPY
+             BIRTHDAY
+          |--------------|
+          |              |
+          |              |
+     |------------------------|
+     |                        |
+     |                        |
+|-----------------------------------|
+|                                   |
+|-----------------------------------|
 
-|-----------------------------------|
-|-----------------------------------|
-  _________________________________ 
- |_________________________________|
-(__)(__)(__)(__)(__)(__)(__)(__)(__)
-|-----------------------------------|
-|-----------------------------------|
-
-A nice delicious sandwich (we'll add this to game)
+A sweet, delicious BIRTHDAY cake ($10,000) (1000 cals). (WE'LL ADD THAT SOON!!!)
 
 2. Survive
 
