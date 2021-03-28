@@ -29,9 +29,16 @@ function rollTicket() {
       output('You earned $1. It might be sad, but as my mom says, "A little money is still money." She also says, "If you stash up money, you\'ll get more money."')
       person.money += 1;  
     } else if (num > 9.0015 && num < 9.0016) {
-      output("You got spiked armor. Congratulations! Now ypersomou can fight.");
+      output("You got spiked armor. Congratulations! Now you can fight.");
       person.inventory.push("spiked helmet", "spiked chestplate", "spiked pants", "spiked boots", "spiked sword", "spiked bow", "spiked arrow"); 
-    }
+    } else if (num > 9.0016 && num < 9.0017) {
+      output("You got a free money button. Push it every day to get money!")
+      person.inventory.push("money button")
+    } else if (num > 9.0016 && num < 9.0026) {
+      output('You got no money! Your inventory also cleared! But there is always... "better luck next time!"')
+      person.money = 0;
+      person.inventory = [];
+    } 
   } else {
     output("You don't have enough money to get a scratch ticket and use it.")
   }
