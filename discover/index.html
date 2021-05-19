@@ -1,0 +1,36 @@
+---
+layout: home
+title: Discover
+---
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div ng-app="app" ng-controller="ctrl">
+</div>
+
+<script>
+  var app = angular.module("app", []);
+  app.controller("ctrl", function($scope) {
+    $scope.allItems = [
+      "earth",
+      "energy",
+      "earthquake",
+      "airplane",
+      "boots",
+      "rubber",
+      "cloth",
+      "umbrella",
+      "metal",
+      "stone",
+      "plasma"
+    ];
+    $scope.discoveredItems = [
+      "earth",
+      "rubber",
+      "cloth",
+      "metal",
+      "stone",
+      "energy"
+    ];
+    $scope.itemEquations = {};
+  });
+</script>
