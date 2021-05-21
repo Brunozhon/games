@@ -17,11 +17,13 @@ title: Discover
   <p>A:</p>
   <select ng-model="makeItem.a">
     <option ng-repeat="item in discoveredItems">
+      {{ item }}
     </option>
   </select>
   <p>B:</p>
   <select ng-model="makeItem.b">
     <option ng-repeat="item in discoveredItems">
+      {{ item }}
     </option>
   </select>
   <button type="button" ng-click="">Make item</button>
