@@ -19,17 +19,21 @@ title: Discover
   var app = angular.module("app", []);
   app.controller("ctrl", function($scope) {
     $scope.allItems = [
-      "earth",
-      "energy",
-      "earthquake",
-      "airplane",
-      "boots",
-      "rubber",
-      "cloth",
-      "umbrella",
-      "metal",
-      "stone",
-      "plasma"
+      "air", // Discovered
+      "earth", // Discovered
+      "energy", // Discovered
+      "earthquake", // earth + energy
+      "airplane", // air + metal
+      "boots", // rubber + cloth
+      "rubber", // Discovered
+      "cloth", // Discovered
+      "umbrella", // cloth + metal
+      "metal", // Discovered
+      "stone", // Discovered
+      "plasma", // stone + stone
+      "DNA", // Discovered
+      "muscle", // energy + DNA
+      "human" // muscle + DNA
     ];
     $scope.discoveredItems = [
       "earth",
@@ -37,9 +41,20 @@ title: Discover
       "cloth",
       "metal",
       "stone",
-      "energy"
+      "energy",
+      "DNA",
+      "air"
     ];
     $scope.search = "";
+    $scope.equationsForItems = {
+      "stone + stone": "plasma",
+      "earth + energy": "earthquake",
+      "energy + DNA": "muscle",
+      "rubber + cloth": "boots",
+      "muscle + DNA": "human",
+      "air + metal": "airplane",
+      "cloth + metal": "umbrella"
+    };
   });
 </script>
 
