@@ -3,11 +3,43 @@ layout: Home
 title: Discover Items
 ---
 
-<div>
+<!-- Content -->
+
+<div id="galax-soup">
   <p class="lead">Galax-soup</p>
-  <p>Almost nothing is known about Galax-soup...</p>
+  <p>Almost nothing is known about Galax-soup, but experts say that it can a new revolution to storing data.</p>
+  <button>Find out more</button>
+  <br />
 </div>
+
+<div></div>
+
+<button data-bs-toggle="offcanvas" data-bs-target="help">Help</button>
+
+<!-- Sidebars -->
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="help" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Help</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Are you stuck in Discover Items? Meet our experts that we mention to get some help.</p>
+  </div>
+</div>
+
+<!-- The small print -->
 
 <div>
   <small><b>Note:</b> All content in this page is fiction.</small>
 </div>
+
+<!-- Script -->
+
+<script>
+  // Functions
+  function findOutMore1() {
+    var elem = document.createElement("P");
+    var text = document.createTextNode("After many years, scientists created a new baby galaxy using Galax-soup. One of them said, 'Let's make some more galaxies.' Will you be the first to make another one?")
+  }
+</script>
