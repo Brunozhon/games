@@ -8,7 +8,7 @@ title: Discover Items
 <div id="galax-soup">
   <p class="lead">Galax-soup</p>
   <p>Almost nothing is known about Galax-soup, but experts say that it can a new revolution to storing data.</p>
-  <button>Find out more</button>
+  <button onclick="this.display='hidden';findOutMore1()">Find out more</button>
   <br />
 </div>
 
@@ -40,6 +40,14 @@ title: Discover Items
   // Functions
   function findOutMore1() {
     var elem = document.createElement("P");
-    var text = document.createTextNode("After many years, scientists created a new baby galaxy using Galax-soup. One of them said, 'Let's make some more galaxies.' Will you be the first to make another one?")
+    var text = document.createTextNode("After many years, scientists created a new baby galaxy using Galax-soup. One of them said, 'Let's make some more galaxies.' Will you be the first to make another one?");
+    elem.appendChild(text);
+    elem.id = "more-galax-soup";
+    document.getElementById("galax-soup").appendChild(elem);
+    elem = document.createElement("BUTTON")
+    text = document.createTextNode("Let's do it!")
+    elem.appendChild(text);
+    elem.id = "find-out-more";
+    document.getElementById("galax-soup").appendChild(elem);
   }
 </script>
