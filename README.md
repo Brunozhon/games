@@ -4,6 +4,8 @@ All of my games!
 
 ## Adventure simulator
 
+Use code `GET-FREE-CAKE` to gain 5000 calories!
+
 Adventure simulator is a game where you eat food, survive, discover things, and unlock the unknown.
 
 It goes like this:
