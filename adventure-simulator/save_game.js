@@ -15,11 +15,11 @@ function decode(b) {
   return b;
 }
 function save(data) {
-  localStorage.setItem("savedata", JSON.stringify(data).hexE());
+  localStorage.setItem("savedata", JSON.stringify(data).hexEncode());
   output("Data saved!")
 }
 function load() {
-  var d = JSON.parse(localStorage.getItem("savedata").hexD());
+  var d = JSON.parse(localStorage.getItem("savedata").hexDecode());
   output("Data loaded from last game!");
   return d;
   /*
