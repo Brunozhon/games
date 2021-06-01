@@ -19,6 +19,8 @@ var jobs = [
   },
   {
     name: "President",
-    moneywhenwork: 1000
+    moneywhenwork: 1000,
+    description: "Take legal action!",
+    requirements: ["Presidental City - College"]
   }
 ]
