@@ -15,7 +15,13 @@ class Game extends React.Component {
     this.state = {
       money: 100,
       petLook: "",
-      petStatus: "happy"
+      petStatus: "happy",
+      petHunger: 0,
+      allFeelings: [
+        "happy",
+        "sad",
+        "hungry"
+      ]
     }
   }
   render() {
@@ -26,10 +32,11 @@ class Game extends React.Component {
         <h1>Your pet</h1>
         <p>Your pet is feeling {this.state.petStatus}.</p>
         <p>Your pet looks like this: {this.state.petLook}.</p>
+        <p>Your pet's hunger percentage is {this.state.petHunger}%</p>
         <p>Change the look:</p>
         <select value="">
           <option value="">No picture</option>
-          <option value="cs" disabled="disabled">Coming soon...</option>
+          <option value=":)">Happy</option>
         </select>
       </div>
     );
