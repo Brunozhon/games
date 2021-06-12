@@ -7,12 +7,24 @@ title: Pet Adoption Simulator
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<script type="">
+<script type="text/babel">
 class Game extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      money: 100,
+      petLook: "",
+      petStatus: "happy"
+    }
+  }
   render() {
     return (
       <div>
         <h1>Your stats</h1>
+        <p>You have ${this.state.money}.</p>
+        <h1>Your pet</h1>
+        <p>Your pet is feeling {this.state.petStatus}.</p>
+        <p>Your pet looks like {this.state.petLook}.</p>
       </div>
     );
   }
