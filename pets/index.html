@@ -25,7 +25,12 @@ class Game extends React.Component {
         <p>You have ${this.state.money}.</p>
         <h1>Your pet</h1>
         <p>Your pet is feeling {this.state.petStatus}.</p>
-        <p>Your pet looks like {this.state.petLook}.</p>
+        <p>Your pet looks like this: {this.state.petLook}.</p>
+        <p>Change the look:</p>
+        <select value="">
+          <option value="">No picture</option>
+          <option value="cs" disabled="disabled">Coming soon...</option>
+        </select>
       </div>
     );
   }
