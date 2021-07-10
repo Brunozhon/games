@@ -38,7 +38,12 @@ function rollTicket() {
       output('You got no money! Your inventory also cleared! But there is always... "better luck next time!"')
       person.money = 0;
       person.inventory = [];
-    } 
+    } else if (num > 9.0027 && num < 9.0100) {
+      output("You will be 'pushed out.' Well, you won't have time to press the 'Save' button.")
+    } else {
+      output("You lost 1000 calories.")
+      output("But you won't.")
+    }
   } else {
     output("You don't have enough money to get a scratch ticket and use it.")
   }
