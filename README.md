@@ -10,8 +10,8 @@ Adventure simulator is a game where you eat food, survive, discover things, and 
 
 It goes like this:
 
-```diff
-1. Eat food from the shop
+```
+1. Eat food from the shop.
               HAPPY
              BIRTHDAY
           |--------------|
@@ -25,8 +25,7 @@ It goes like this:
 |                                   |
 |-----------------------------------|
 
-- A sweet, delicious BIRTHDAY cake ($10,000) (1000 cals). (WE'LL ADD THAT SOON!!!)
-+ A sweet, delicious BIRTHDAY cake ($10,000) (5000 cals).
+A sweet, delicious BIRTHDAY cake ($10,000) (5000 cals).
 
 2. Survive
 
